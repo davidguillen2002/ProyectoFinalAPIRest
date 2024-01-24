@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Proyecto Final API - Nutrivista
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Información General
 
-## Available Scripts
+- **Curso:** Ingeniería Web
+- **Fecha:** 29 de Enero de 2024
+- **Autores:** David Andrés Guillén Balarezo; Iván Andrés Tulcán Jaya
+- **Ubicación:** Quito, Ecuador
+- **GitHub Repo:** [ProyectoFinalAPI](https://github.com/davidguillen2002/ProyectoFinalAPI)
+- **Deployed App:** [Nutrivista App](https://apinutrivista.onrender.com)
 
-In the project directory, you can run:
+## Descripción
 
-### `npm start`
+Este repositorio contiene el backend de nuestra aplicación Nutrivista, implementada como parte del proyecto final para el curso de Arquitectura de Software y Diseño de Sistemas. La API desarrollada gestiona los datos de nutrición, permitiendo operaciones CRUD en los recursos de alimentos y nutrientes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Características Claves
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Listado y detallado de alimentos.
+- Calculadora de calorías.
+- Serialización de datos en formato JSON.
+- Filtros y capacidades de búsqueda avanzada.
 
-### `npm test`
+## Mejoras Implementadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Mejoras Basadas en Principios SOLID
 
-### `npm run build`
+- **Single Responsibility Principle:** Separación de responsabilidades en el modelo `Alimento`.
+- **Open/Closed Principle:** Estructura de modelo extensible para nuevas relaciones.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Mejoras con Patrones de Diseño
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Repository Pattern:** Clase `AlimentoRepository` para abstracción de operaciones CRUD.
+- **Service Pattern:** Clase `AlimentoService` como intermediario entre la presentación y el repositorio.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## API Funcionalidad
 
-### `npm run eject`
+- CRUD operaciones para `Alimento` y `Nutriente`.
+- Uso de `DjangoFilterBackend` y `filters.SearchFilter` para filtrado y búsqueda.
+- Serializadores para transformar datos del modelo a JSON.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Frontend en React
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+La aplicación frontend se estructura en los siguientes componentes:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **App:** Navegación y búsqueda de alimentos.
+- **AlimentoDetalle:** Detalle de alimentos seleccionados.
+- **CalculadoraCalorias:** Cálculo de calorías necesarias.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Características Técnicas
 
-## Learn More
+- Uso de React Router para navegación.
+- Estados y ciclos de vida manejados con hooks `useState` y `useEffect`.
+- Diseño responsivo y adaptativo.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Enlaces
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Repositorio GitHub:** [ProyectoFinalAPI](https://github.com/davidguillen2002/ProyectoFinalAPI)
+- **Aplicación Deployada:** [Nutrivista App](https://apinutrivista.onrender.com)
 
-### Code Splitting
+## Contacto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **David Andrés Guillén Balarezo:** [Perfil de GitHub](https://github.com/davidguillen2002)
+- **Iván Andrés Tulcán Jaya:** [Perfil de GitHub](https://github.com/ivantulcan)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+Desarrollado con ❤️ por David y Iván.
