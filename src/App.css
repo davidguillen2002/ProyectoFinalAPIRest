@@ -1,38 +1,119 @@
+/* Estilos Generales */
 .App {
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Encabezado */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #20232a;
+  color: #61dafb;
+  padding: 20px 0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.App-link {
+.App-header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+/* Barra de Búsqueda */
+input[type='text'] {
+  padding: 10px 15px;
+  width: 80%;
+  max-width: 500px;
+  border: 2px solid #61dafb;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 1rem;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Lista de Alimentos */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 40px auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+ul li {
+  background-color: #fff;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+ul li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Enlaces de Alimentos */
+.Link {
+  text-decoration: none;
+  color: #20232a;
+  font-weight: 600;
+}
+
+.Link:hover {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Detalle del Alimento */
+.AlimentoDetalle {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.AlimentoDetalle h2 {
+  color: #20232a;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.AlimentoDetalle p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+strong {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+  display: flex; /* Usa flexbox para alinear los elementos del menú */
+  justify-content: center; /* Centra los elementos del menú */
+  background-color: #f0f0f0; /* Color de fondo del menú */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 20px; /* Espaciado externo debajo del menú */
+}
+
+nav a {
+  color: #333; /* Color del texto de los enlaces */
+  text-decoration: none; /* Elimina el subrayado */
+  font-weight: bold; /* Estilo de fuente en negrita */
+  margin: 0 10px; /* Espaciado entre enlaces */
+}
+
+nav a:hover {
+  color: #007bff; /* Color del texto al pasar el ratón por encima */
+  text-decoration: underline; /* Subrayado al pasar el ratón por encima */
 }
